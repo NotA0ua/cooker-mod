@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cooker-mod",
+	"version": "${version}",
+	"name": "Cooker Mod",
+	"description": "This is a simple mod, which added some cool stuff",
+	"authors": [
+		"NotA0ua!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cooker-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ntq.cookermod.CookerMod"
+		],
+		"client": [
+			"net.ntq.cookermod.CookerModClient"
+		],
+		"fabric-datagen": [
+			"net.ntq.cookermod.CookerModDataGenerator"
+		]
+	},
+	"mixins": [
+		"cooker-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
